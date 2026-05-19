@@ -26,12 +26,32 @@
 
 → **Objectif rebuild : recréer les pages qui recevaient ces BL** pour préserver le jus SEO quand Google ré-indexe.
 
-## Plan rebuild (à compléter)
+## Plan rebuild
 
-### Étape 1 — Récup Wayback
-- [ ] Lister tous les snapshots Wayback disponibles
-- [ ] Récupérer la dernière version complète (2018 probable)
-- [ ] Identifier les URLs qui recevaient les BL (cross-ref avec Ahrefs Backlinks → Pages)
+### ✅ Étape 1 — Récup Wayback (FAIT 2026-05-19)
+- 97 URLs uniques entre 2015 et 2021 (voir `wayback/norlandascup.fr-wayback-urls.tsv`)
+- ~10-12 vraies pages utiles, ~85 lorem ipsum à skipper
+
+### ✅ Étape 2 — Cross-ref Ahrefs Pages (FAIT 2026-05-19)
+**La home concentre 99% du jus SEO :**
+
+| URL | RD | DoF | Wayback | Tier |
+|---|---|---|---|---|
+| https://norlandascup.fr/ | **180** | **94** | ✅ | **TIER 1** |
+| http://norlandascup.fr/le-programme-en-cours/ | 1 | 1 | ✅ (2015) | TIER 1 bis |
+| http://www.norlandascup.fr/ | 2 | 6 | ✅ | 301 → root |
+| http://norlandascup.fr/wp-content/uploads/.../61015716_...jpg | 1 | 1 | ❌ (image) | 301 → home |
+
+### Étape 3 — Setup tech (à venir)
+- [ ] DNS + VPS + LEMP + WP
+- [ ] **Permalink Manager** pour slug racine `/` exact
+- [ ] Variables :
+  ```
+  DOMAIN=norlandascup.fr
+  VPS_IP=
+  WP_PATH=/var/www/norlandascup
+  ```
+- [ ] 301 rules: `www.* → root` + `wp-content/uploads/.../61015716_*.jpg → /`
 
 ### Étape 2 — Setup tech
 - [ ] VPS + DNS + LEMP + WP (suivre `site-template/`)
