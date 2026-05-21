@@ -42,28 +42,43 @@
 | http://www.norlandascup.fr/ | 2 | 6 | ✅ | 301 → root |
 | http://norlandascup.fr/wp-content/uploads/.../61015716_...jpg | 1 | 1 | ❌ (image) | 301 → home |
 
-### Étape 3 — Setup tech (à venir)
-- [ ] DNS + VPS + LEMP + WP
-- [ ] **Permalink Manager** pour slug racine `/` exact
+### Étape 3 — Setup tech (à venir) — STACK WORDPRESS
+
+⚠️ Décision actée 2026-05-21 : **tous les nouveaux sites en WP** (cf. `feedback_stack_preference_wordpress.md`). Norlandascup sera **full WP from start** (vs brasserieautandem en Astro = exception définitive).
+
+Setup à reproduire (calqué sur boutique-catea) :
+- [ ] DNS Cloudflare + NS switch (registrar)
+- [ ] VPS Contabo `207.180.213.109` (mutualisé) — dir `/var/www/norlandascup/`
+- [ ] LEMP : Nginx + MySQL + PHP-FPM (déjà installés)
+- [ ] **WordPress** latest
+- [ ] Theme **Kadence 1.4.5** (cohérent boutique-catea)
+- [ ] Plugins : Rank Math SEO, WP Super Cache, Wordfence, UpdraftPlus, Redirection
+- [ ] **Permalink Manager Pro** pour préserver le slug racine `/` et les URLs Wayback à trafic
+- [ ] SSL Cloudflare Origin Certificate (15 ans) + Full (strict)
+- [ ] Vhost Nginx split apex/www + 301 server-side (idem brasserieautandem cf. `feedback_astro_vps_deploy`)
+- [ ] 301 rules: `www.* → root` + `wp-content/uploads/.../61015716_*.jpg → /`
 - [ ] Variables :
   ```
   DOMAIN=norlandascup.fr
-  VPS_IP=
+  VPS_IP=207.180.213.109
   WP_PATH=/var/www/norlandascup
-  ```
-- [ ] 301 rules: `www.* → root` + `wp-content/uploads/.../61015716_*.jpg → /`
-
-### Étape 2 — Setup tech
-- [ ] VPS + DNS + LEMP + WP (suivre `site-template/`)
-- [ ] SSL Let's Encrypt
-- [ ] Variables à définir :
-  ```
-  DOMAIN=norlandascup.fr
-  VPS_IP=
-  WP_PATH=/var/www/norlandascup
+  WP_DB_NAME=norlandascup
   ```
 
-### Étape 3 — Content (15-25 articles)
+### Étape 4 — Content (cadence Wizards 2 articles/jour via Wisewand)
+
+⚠️ La méthode Wizards officielle dit "remonter vite fait les pages qui faisaient du traf". Pour norlandascup :
+- 53 pages skeletons déjà extraites dans `content/` (Wayback fetch fait le 2026-05-20)
+- Tier 1 : home (180 RD) — recréer en priorité
+- Tier 1 bis : `/le-programme-en-cours/` (1 RD)
+- Tier 2-4 : ~50 autres pages (résultats, interviews, équipages — souvent thin Wayback car classements en PNG image)
+
+Pipeline content avec Wisewand :
+- Wisewand API utilisée nativement avec WP (webhook Publish to WordPress)
+- Brief par tier : résultats vs interviews vs institutionnel vs équipages
+- 2 articles/jour cible Wizards
+- Volume total : 60 articles/mois
+
 Niche : voile/régate/sport nautique + tourisme Normandie côtière. Pistes :
 - Calendrier régates Normandie/Calvados
 - Guide spots de voile en Normandie
