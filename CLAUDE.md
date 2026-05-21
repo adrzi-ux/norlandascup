@@ -42,9 +42,20 @@
 | http://www.norlandascup.fr/ | 2 | 6 | ✅ | 301 → root |
 | http://norlandascup.fr/wp-content/uploads/.../61015716_...jpg | 1 | 1 | ❌ (image) | 301 → home |
 
-### Étape 3 — Setup tech (à venir) — STACK WORDPRESS
+### Étape 2.5 — Prototype design Claude Design (avant impl WP)
 
-⚠️ Décision actée 2026-05-21 : **tous les nouveaux sites en WP** (cf. `feedback_stack_preference_wordpress.md`). Norlandascup sera **full WP from start** (vs brasserieautandem en Astro = exception définitive).
+⚠️ Décision actée 2026-05-21 : on garde Claude Design comme outil de **prototypage UI** pour TOUS les sites (cohérent brasserieautandem), MAIS l'impl finale = **WP Kadence** (pas Astro).
+
+Workflow norlandascup :
+- [ ] Créer `claude-design-brief.md` adapté niche sport régates Normandie (référence template `brasserieautandem/claude-design-brief.md`)
+- [ ] Itérer le design sur `claude.ai/design` (couleurs Norvégie/marine, typo)
+- [ ] Export bundle via API Anthropic
+- [ ] Extraire CSS du proto → coller dans Customizer Kadence WP
+- [ ] Recréer pages institutionnelles avec HTML matchant les composants Claude Design
+
+### Étape 3 — Setup tech — STACK WORDPRESS
+
+⚠️ Décision actée 2026-05-21 : **tous les nouveaux sites en WP** (cf. `feedback_stack_preference_wordpress.md`). Norlandascup = **full WP from start** (vs brasserieautandem en Astro = exception définitive).
 
 Setup à reproduire (calqué sur boutique-catea) :
 - [ ] DNS Cloudflare + NS switch (registrar)
