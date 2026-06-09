@@ -103,7 +103,7 @@ Workflow norlandascup :
 - [x] **Rank Math configuré 2026-06-09** (le wizard n'avait jamais été finalisé) :
   - `rank_math_is_configured=1`, `rank_math_registration_skip=1`, `rank_math_wizard_completed=1`
   - **Bug rencontré** : option `rank_math_modules` stockée comme **string littérale** (`'a:8:{...}'`) au lieu d'array PHP → tous les modules silencieusement inactifs (Manager::controls ne contenait que les internes). Fix : `wp option update rank_math_modules --format=json '[...]'`
-  - Modules actifs : `link-counter, analytics, image-seo, seo-tools, sitemap, breadcrumbs, redirections, role-manager, rich-snippet, robots-txt, instant-indexing`
+  - Modules actifs : `link-counter, analytics, image-seo, seo-tools, sitemap, breadcrumbs, role-manager, rich-snippet, robots-txt, instant-indexing` (module `redirections` retiré 2026-06-09 16:12 après incident 502 : tables `wp_rank_math_redirections{,_cache}` jamais créées car module muet à l'install initial ; chaque request générait erreurs DB qui saturaient buffer FastCGI Nginx → bad gateway. Le plugin `redirection` (John Godley) déjà actif suffit)
   - Home page (#5) : `rank_math_title` + `rank_math_description` définies (⚠️ **meta key SANS underscore** — pas `_rank_math_*`)
 - [x] **Sitemap Rank Math actif 2026-06-09** : `https://www.norlandascup.fr/sitemap_index.xml` → 200 (1 sous-sitemap `page-sitemap.xml` avec 44 URLs). WP-native `/wp-sitemap.xml` désactivé via `wp_sitemaps_enabled=false` + 301 → `sitemap_index.xml`
 - [x] **robots.txt** référence désormais `Sitemap: https://www.norlandascup.fr/sitemap_index.xml`
