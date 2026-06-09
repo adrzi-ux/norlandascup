@@ -32,15 +32,19 @@ get_header();
 				array( 'img' => 'eq-galerie-retour-ponton.webp', 'name' => 'Caen Ouistreham',       'tag' => 'Bassin',         'desc' => __( 'Bassin Saint Pierre au cœur de Caen, prolongement du canal vers la mer. Spot historique de la Norlanda\'s Cup, accès au plan d\'eau de course par l\'écluse.', 'norlandascup' ) ),
 			);
 			foreach ( $spots as $s ) : ?>
-				<a class="acard" href="<?php echo esc_url( home_url( '/magazine/?rubrique=spots' ) ); ?>" style="text-decoration:none;color:inherit;display:block">
+				<article class="acard" style="display:block">
 					<div class="ph r45" style="background-image:url(<?php echo esc_url( NORLANDASCUP_URI . '/assets/img/' . $s['img'] ); ?>);background-size:cover;background-position:center" data-ph="<?php echo esc_attr( sprintf( __( 'Port de %s, ratio 4:5', 'norlandascup' ), $s['name'] ) ); ?>"></div>
 					<span class="ac-tag"><?php echo esc_html( $s['tag'] ); ?></span>
 					<h3><?php echo esc_html( $s['name'] ); ?></h3>
 					<p><?php echo esc_html( $s['desc'] ); ?></p>
-					<span class="ac-date"><?php esc_html_e( 'Lire les articles spots', 'norlandascup' ); ?><span class="arr">→</span></span>
-				</a>
+				</article>
 			<?php endforeach; ?>
 		</div>
+		<p style="margin-top:32px;text-align:center">
+			<a class="btn btn-dark" href="<?php echo esc_url( home_url( '/magazine/?rubrique=spots' ) ); ?>">
+				<?php esc_html_e( 'Lire tous les articles spots du magazine', 'norlandascup' ); ?><span class="arr">→</span>
+			</a>
+		</p>
 	</div>
 </section>
 
