@@ -100,6 +100,14 @@ Workflow norlandascup :
 - [x] **6 pages stubs créées 2026-06-09** (suite découverte de liens cassés) : `/equipage/biocombustibles/`, `/equipage/caen-yacht-club/` (refs hardcodées dans page-equipage.php), `/materiel-voile/{voilerie,electronique,securite,vetements-techniques}/` (refs dynamiques dans page-materiel.php). IDs WP 28-33. Toutes en 200.
 - [x] **19 articles magazine créés 2026-06-09** (suite découverte cards renvoyant à `/magazine/?rubrique=*` au lieu d'articles uniques) : home lead + 6 cards home + 1 feature magazine + 11 cards magazine. IDs WP 34-52, tous enfants de `magazine` (#6), URLs `/magazine/{slug}/`, template `page-article.php`. Données centralisées dans `wp-theme-child/inc/articles-data.php` (source unique pour cards + page article). `front-page.php` et `page-magazine.php` refactorés pour lire depuis `norlandascup_articles()` et linker vers slugs uniques. Toutes en 200.
 - [x] **Images branchées dans le theme child 2026-06-09** : tous les `<div class="ph" data-ph="...">` (placeholders gris) ont reçu `style="background-image:url(NORLANDASCUP_URI/assets/img/...)"`. Total : 8 images home (hero + lead + 6 cards) + 12 images magazine (feature + 11 cards) + 9 images spots + 4 galerie équipage + 3 portraits À propos + 6 archive + 6 matériel + 2 interview. Toutes les 28 images `assets/img/*.webp` du theme child sont désormais utilisées
+- [x] **Rank Math configuré 2026-06-09** (le wizard n'avait jamais été finalisé) :
+  - `rank_math_is_configured=1`, `rank_math_registration_skip=1`, `rank_math_wizard_completed=1`
+  - **Bug rencontré** : option `rank_math_modules` stockée comme **string littérale** (`'a:8:{...}'`) au lieu d'array PHP → tous les modules silencieusement inactifs (Manager::controls ne contenait que les internes). Fix : `wp option update rank_math_modules --format=json '[...]'`
+  - Modules actifs : `link-counter, analytics, image-seo, seo-tools, sitemap, breadcrumbs, redirections, role-manager, rich-snippet, robots-txt, instant-indexing`
+  - Home page (#5) : `rank_math_title` + `rank_math_description` définies (⚠️ **meta key SANS underscore** — pas `_rank_math_*`)
+- [x] **Sitemap Rank Math actif 2026-06-09** : `https://www.norlandascup.fr/sitemap_index.xml` → 200 (1 sous-sitemap `page-sitemap.xml` avec 44 URLs). WP-native `/wp-sitemap.xml` désactivé via `wp_sitemaps_enabled=false` + 301 → `sitemap_index.xml`
+- [x] **robots.txt** référence désormais `Sitemap: https://www.norlandascup.fr/sitemap_index.xml`
+- [x] **Meta SEO rendues en HTML** : `<title>`, `<meta name="description">`, OG complets (`og:locale/type/title/url/site_name/description`), Twitter Cards, JSON-LD schema (`application/ld+json`)
 - [ ] Variables :
   ```
   DOMAIN=norlandascup.fr
