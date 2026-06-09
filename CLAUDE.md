@@ -108,6 +108,14 @@ Workflow norlandascup :
 - [x] **Sitemap Rank Math actif 2026-06-09** : `https://www.norlandascup.fr/sitemap_index.xml` → 200 (1 sous-sitemap `page-sitemap.xml` avec 44 URLs). WP-native `/wp-sitemap.xml` désactivé via `wp_sitemaps_enabled=false` + 301 → `sitemap_index.xml`
 - [x] **robots.txt** référence désormais `Sitemap: https://www.norlandascup.fr/sitemap_index.xml`
 - [x] **Meta SEO rendues en HTML** : `<title>`, `<meta name="description">`, OG complets (`og:locale/type/title/url/site_name/description`), Twitter Cards, JSON-LD schema (`application/ld+json`)
+- [x] **IndexNow opérationnel 2026-06-09** : key Rank Math `818c84f9f2464bc7913b9e1954b62c61` accessible à `/<key>.txt` (200). Ping initial réussi (HTTP 200) pour 15 URLs : 9 Tier 1 + magazine + calendrier + spots + materiel + la-norlandas-cup + contact. Bing/Yandex/Seznam/Naver notifiés. Auto-ping à chaque future publi via module `instant-indexing` actif.
+- [ ] **GSC — actions manuelles à faire par l'utilisateur** (pas d'OAuth Rank Math actuellement) :
+  - Soumettre sitemap `https://www.norlandascup.fr/sitemap_index.xml` dans property GSC norlandascup.fr
+  - URL Inspection + "Demander indexation" sur les 9 URLs Tier 1 (limite 10/jour côté GSC)
+  - (Optionnel) Purger `robots.txt` dans CF cache si on ne veut pas attendre 4h
+- [ ] **Bing Webmaster Tools — actions manuelles à faire par l'utilisateur** :
+  - Ajouter property + import depuis GSC (1 clic)
+  - Soumettre `sitemap_index.xml` (Submit sitemap → coller URL)
 - [ ] Variables :
   ```
   DOMAIN=norlandascup.fr
