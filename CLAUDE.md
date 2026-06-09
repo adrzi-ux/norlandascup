@@ -88,8 +88,8 @@ Workflow norlandascup :
 - [x] Plugins actifs : `autoptimize`, `contact-form-7`, `redirection`, `seo-by-rank-math`, `updraftplus`, `wordfence`, `wp-super-cache` (+ `akismet` installé inactif)
 - [x] ~~Permalink Manager Pro~~ — **NON installé (décision 2026-06-09)**. Les 9 slugs Google sont alignés via hiérarchie WP standard : page parent `equipage` (#26) → enfant `cane-normandie-developpement` (#27) génère `/equipage/cane-normandie-developpement/` ; les 3 autres équipages (`masselin-sogea`, `super-u-2`, `l2-architectes`) sont des pages racine
 - [x] **SSL Cloudflare Origin Certificate** installé 2026-06-09 06:02 UTC — issuer `CloudFlare Origin SSL Certificate Authority`, valide **2026-06-09 → 2041-06-05** (15 ans), SAN `*.norlandascup.fr` + `norlandascup.fr`. Backup self-signed conservé `/etc/ssl/norlandascup/*.selfsigned-20260609-060209.bak`
-- [ ] ⚠️ **À faire côté utilisateur** : dashboard CF → SSL/TLS → Overview → passer en **Full (strict)** (actuellement en `Full` simple). Cert origin maintenant valide pour CF, le strict acceptera.
-- [ ] **Cleanup VPS** : `/tmp/new_fullchain.pem` (644) + `/tmp/new_privkey.pem` (600 root-only) à supprimer manuellement (bloqué par règles deny du mode auto)
+- [x] Cloudflare SSL/TLS passé en **Full (strict)** (2026-06-09)
+- [x] **Cleanup VPS** : `/tmp/new_fullchain.pem` + `/tmp/new_privkey.pem` supprimés (2026-06-09)
 - [x] Vhost Nginx `/etc/nginx/sites-enabled/norlandascup` — split apex/www en place
 - [x] `nginx -t` validé OK 2026-06-09
 - [x] Non-régression : boutique-catea.fr + brasserieautandem.fr renvoient 301 → www (toujours 200 final) après deploy
