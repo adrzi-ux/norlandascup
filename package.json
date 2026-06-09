@@ -1,0 +1,10 @@
+{
+  "name": "norlandascup-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Internal scripts for the norlandascup theme child (Pexels fetch, WebP conversion, local preview build).",
+  "dependencies": {
+    "sharp": "^0.34.5"
+  }
+}

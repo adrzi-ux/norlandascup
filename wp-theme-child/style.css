@@ -1,0 +1,17 @@
+/*
+Theme Name: Norlandascup Child
+Theme URI: https://www.norlandascup.fr/
+Template: kadence
+Description: Theme child Kadence pour le magazine éditorial Norlanda's Cup. Palette marine + crème dunaire + rouille balise, typo IBM Plex Serif anguleuse de presse maritime. Design distinct de boutique-catea et brasserieautandem (anti footprint réseau). Implémenté à partir du bundle Claude Design Norlandascup V2.
+Author: La rédaction Norlanda's Cup
+Author URI: https://www.norlandascup.fr/a-propos/
+Version: 0.1.0
+Requires at least: 6.4
+Tested up to: 6.5
+Requires PHP: 8.1
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: norlandascup
+*/
+
+/* Le CSS est dans assets/css/theme.css (enqueue dans functions.php). */

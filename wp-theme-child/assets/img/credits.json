@@ -1,0 +1,226 @@
+{
+  "home-hero": {
+    "file": "home-hero.jpg",
+    "alt": "Dynamic sailing yacht with crew racing on open sea against gray sky.",
+    "photographer": "Mike Knibbs",
+    "photographer_url": "https://www.pexels.com/@mikeknibbs",
+    "pexels_url": "https://www.pexels.com/photo/sailboats-on-the-sea-9847622/",
+    "query": "sailing yacht race rough sea"
+  },
+  "home-lead-trophee": {
+    "file": "home-lead-trophee.webp",
+    "alt": "Aerial photograph of multiple sailboats racing on a clear blue sea, creating dynamic sail trails.",
+    "photographer": "Muhammed Gündüz",
+    "photographer_url": "https://www.pexels.com/@muhammed-gunduz-383792461",
+    "pexels_url": "https://www.pexels.com/photo/aerial-view-of-sailboats-racing-in-open-water-29679811/",
+    "query": "sailing yacht race fleet"
+  },
+  "home-card-winch": {
+    "file": "home-card-winch.jpg",
+    "alt": "Close-up of a winch on a wooden deck with colorful ropes used for sailing.",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro",
+    "pexels_url": "https://www.pexels.com/photo/rigging-ropes-on-a-boat-5416351/",
+    "query": "sailboat winch deck close up"
+  },
+  "home-card-honfleur": {
+    "file": "home-card-honfleur.jpg",
+    "alt": "A picturesque view of sailboats at Honfleur harbor with a sunset backdrop in Normandy, France.",
+    "photographer": "AXP Photography",
+    "photographer_url": "https://www.pexels.com/@axp-photography-500641970",
+    "pexels_url": "https://www.pexels.com/photo/boats-docked-in-the-harbor-at-sunset-27419754/",
+    "query": "honfleur harbor boats"
+  },
+  "home-card-skipper": {
+    "file": "home-card-skipper.jpg",
+    "alt": "Close-up of a man's hand on a wooden ship wheel, wearing a wristwatch, illustrating navigation and seafaring.",
+    "photographer": "Damir K .",
+    "photographer_url": "https://www.pexels.com/@damir",
+    "pexels_url": "https://www.pexels.com/photo/man-holding-a-wooden-steering-wheel-of-a-ship-with-one-hand-17561279/",
+    "query": "sailor hands helm wheel"
+  },
+  "home-card-etretat": {
+    "file": "home-card-etretat.jpg",
+    "alt": "Stunning view of towering cliffs facing the vast ocean under a cloudy sky.",
+    "photographer": "Adrien Olichon",
+    "photographer_url": "https://www.pexels.com/@adrien-olichon-1257089",
+    "pexels_url": "https://www.pexels.com/photo/majestic-cliffs-overlooking-the-ocean-28735695/",
+    "query": "etretat cliffs sea"
+  },
+  "home-card-voilerie": {
+    "file": "home-card-voilerie.jpg",
+    "alt": "View from below of a sailboat mast and rigging against a clear blue sky.",
+    "photographer": "Matheus Bertelli",
+    "photographer_url": "https://www.pexels.com/@bertellifotografia",
+    "pexels_url": "https://www.pexels.com/photo/sailing-ship-mast-15141412/",
+    "query": "sailmaker sail loft"
+  },
+  "home-card-deauville": {
+    "file": "home-card-deauville.jpg",
+    "alt": "Harbor view with sailboats and lighthouse reflection in Deauville, France.",
+    "photographer": "Mathias Reding",
+    "photographer_url": "https://www.pexels.com/@matreding",
+    "pexels_url": "https://www.pexels.com/photo/harbor-buildings-reflecting-in-marina-waters-18111091/",
+    "query": "deauville marina morning"
+  },
+  "mag-feature-trophee": {
+    "file": "mag-feature-trophee.jpg",
+    "alt": "Sailboats compete in a sunny open sea race, showcasing nautical adventure.",
+    "photographer": "Muhammed Gündüz",
+    "photographer_url": "https://www.pexels.com/@muhammed-gunduz-383792461",
+    "pexels_url": "https://www.pexels.com/photo/aerial-view-of-sailboats-racing-on-open-sea-29679807/",
+    "query": "sailing regatta start line"
+  },
+  "mag-card-tour-belle-ile": {
+    "file": "mag-card-tour-belle-ile.jpg",
+    "alt": "A vibrant sailboat regatta unfolds on the open sea under a dynamic sky, capturing the spirit of adventure.",
+    "photographer": "TonyNojmanSK",
+    "photographer_url": "https://www.pexels.com/@tonynojmansk-186688133",
+    "pexels_url": "https://www.pexels.com/photo/sailboats-sailing-in-water-11459373/",
+    "query": "sailboat fleet downwind"
+  },
+  "mag-card-portenbessin": {
+    "file": "mag-card-portenbessin.jpg",
+    "alt": "A tranquil seaside view with a yellow mooring bollard on a pier with calm waters.",
+    "photographer": "Mathias Reding",
+    "photographer_url": "https://www.pexels.com/@matreding",
+    "pexels_url": "https://www.pexels.com/photo/pier-near-blue-sea-water-12069541/",
+    "query": "port en bessin fishing harbor"
+  },
+  "mag-card-cherbourg": {
+    "file": "mag-card-cherbourg.jpg",
+    "alt": "A bustling industrial port featuring the red Seaway 7 ship and workers in orange attire against a clear sky.",
+    "photographer": "Ben Prater",
+    "photographer_url": "https://www.pexels.com/@benprater",
+    "pexels_url": "https://www.pexels.com/photo/industrial-port-scene-with-seaway-7-vessel-and-workers-37242179/",
+    "query": "cherbourg harbor view"
+  },
+  "mag-card-genois": {
+    "file": "mag-card-genois.jpg",
+    "alt": "Detailed view of ropes and sails on a sailboat in natural light.",
+    "photographer": "Klara",
+    "photographer_url": "https://www.pexels.com/@klara-40037156",
+    "pexels_url": "https://www.pexels.com/photo/brown-textile-of-folded-mainsail-7339444/",
+    "query": "sailboat genoa headsail"
+  },
+  "mag-card-compas": {
+    "file": "mag-card-compas.jpg",
+    "alt": "Close-up view of navigation tools on a ship's captain bridge including binoculars and compass.",
+    "photographer": "Matheus Bertelli",
+    "photographer_url": "https://www.pexels.com/@bertellifotografia",
+    "pexels_url": "https://www.pexels.com/photo/binoculars-on-captain-bridge-15141402/",
+    "query": "nautical compass marine"
+  },
+  "mag-card-ciel-ouest": {
+    "file": "mag-card-ciel-ouest.jpg",
+    "alt": "Discover the stunning cliffs of Étretat, France, with turquoise waters and unique rock formations.",
+    "photographer": "Ryan Klaus",
+    "photographer_url": "https://www.pexels.com/@ryank",
+    "pexels_url": "https://www.pexels.com/photo/breathtaking-seascape-of-etretat-cliffs-france-33904922/",
+    "query": "normandy coast sky clouds"
+  },
+  "mag-card-maree": {
+    "file": "mag-card-maree.jpg",
+    "alt": "A dynamic close-up of stones and waves at a rocky seashore, showcasing natural textures.",
+    "photographer": "Nothing Ahead",
+    "photographer_url": "https://www.pexels.com/@ian-panelo",
+    "pexels_url": "https://www.pexels.com/photo/ocean-waves-crashing-on-rocky-seashore-10010638/",
+    "query": "tidal current rocks sea"
+  },
+  "mag-card-portrait-barreur": {
+    "file": "mag-card-portrait-barreur.jpg",
+    "alt": "Portrait of an elderly captain steering a boat, showcasing nautical life at sea.",
+    "photographer": "Samet  Korkmaz",
+    "photographer_url": "https://www.pexels.com/@samet-korkmaz-267675092",
+    "pexels_url": "https://www.pexels.com/photo/captain-on-boat-12811924/",
+    "query": "sailor portrait helmsman boat"
+  },
+  "mag-card-equipiere": {
+    "file": "mag-card-equipiere.jpg",
+    "alt": "An active young man engaged in sailing on a yacht, showcasing nautical skills and adventure.",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro",
+    "pexels_url": "https://www.pexels.com/photo/man-in-blue-jacket-wearing-red-helmet-4928902/",
+    "query": "female sailor crew hiking"
+  },
+  "mag-card-tableau-course": {
+    "file": "mag-card-tableau-course.jpg",
+    "alt": "Experience the thrill of sailing with a team navigating open waters under cloudy skies.",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro",
+    "pexels_url": "https://www.pexels.com/photo/white-sail-boat-on-sea-under-cloudy-sky-4911151/",
+    "query": "yacht club notice board sailing"
+  },
+  "mag-card-ouistreham": {
+    "file": "mag-card-ouistreham.jpg",
+    "alt": "Narrowboats moored along the scenic Caen Hill Locks in the English countryside.",
+    "photographer": "Bob Jenkin",
+    "photographer_url": "https://www.pexels.com/@bob-jenkin-2007649943",
+    "pexels_url": "https://www.pexels.com/photo/canal-boats-at-caen-hill-locks-in-spring-32037324/",
+    "query": "canal lock boat"
+  },
+  "archive-next-equipages": {
+    "file": "archive-next-equipages.jpg",
+    "alt": "Multiple sailboats participate in a thrilling regatta on a calm sea under clear skies.",
+    "photographer": "Serhii Volyk",
+    "photographer_url": "https://www.pexels.com/@mortywalker",
+    "pexels_url": "https://www.pexels.com/photo/sailboats-racing-on-the-sea-harbor-9518137/",
+    "query": "sailboat fleet harbor start"
+  },
+  "archive-next-format": {
+    "file": "archive-next-format.jpg",
+    "alt": "Aerial photograph of multiple sailboats racing on a clear blue sea, creating dynamic sail trails.",
+    "photographer": "Muhammed Gündüz",
+    "photographer_url": "https://www.pexels.com/@muhammed-gunduz-383792461",
+    "pexels_url": "https://www.pexels.com/photo/aerial-view-of-sailboats-racing-in-open-water-29679811/",
+    "query": "sailing race course chart"
+  },
+  "eq-galerie-baie-seine": {
+    "file": "eq-galerie-baie-seine.jpg",
+    "alt": "A sailboat cruising in the Gulf of Finland near Saint Petersburg, Russia. Scenic maritime leisure.",
+    "photographer": "Илья Малых",
+    "photographer_url": "https://www.pexels.com/@82251412",
+    "pexels_url": "https://www.pexels.com/photo/people-in-a-sailboat-on-sea-8802951/",
+    "query": "sailboat downwind spinnaker"
+  },
+  "eq-galerie-empannage": {
+    "file": "eq-galerie-empannage.jpg",
+    "alt": "Close-up view of a sailboat's mast and sails, capturing nautical elegance and freedom.",
+    "photographer": "Jari Näf",
+    "photographer_url": "https://www.pexels.com/@jari-naf-522587377",
+    "pexels_url": "https://www.pexels.com/photo/elegant-sailboat-mast-against-a-clear-sky-30505279/",
+    "query": "sailboat gybe maneuver"
+  },
+  "eq-galerie-rappel": {
+    "file": "eq-galerie-rappel.jpg",
+    "alt": "Sailing enthusiasts navigate a yacht on a breezy sea under a bridge. Perfect for adventure, travel, and sports concepts.",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro",
+    "pexels_url": "https://www.pexels.com/photo/man-in-white-shirt-and-black-pants-standing-on-white-and-red-sail-boat-4934532/",
+    "query": "sailing crew hiking out waves"
+  },
+  "eq-galerie-retour-ponton": {
+    "file": "eq-galerie-retour-ponton.jpg",
+    "alt": "A vibrant scene of sailboats moored at a bustling marina under a clear blue sky.",
+    "photographer": "Mathias Reding",
+    "photographer_url": "https://www.pexels.com/@matreding",
+    "pexels_url": "https://www.pexels.com/photo/sailboats-moored-in-harbor-18111104/",
+    "query": "sailboat docking marina"
+  },
+  "archive-hero": {
+    "file": "archive-hero.webp",
+    "alt": "Aerial view of vibrant sailing boats near scenic Marmaris, Turkey coastline.",
+    "photographer": "Tolga Aslantürk",
+    "photographer_url": "https://www.pexels.com/@tolgaaslanturk",
+    "pexels_url": "https://www.pexels.com/photo/an-aerial-photography-of-sailing-boats-on-the-sea-near-the-mountain-13075516/",
+    "query": "sailing yacht race aerial drone sea"
+  },
+  "eq-portrait-bateau": {
+    "file": "eq-portrait-bateau.webp",
+    "alt": "Model sailboats with GBR markings race on a lake in Lincoln, England.",
+    "photographer": "Christopher More",
+    "photographer_url": "https://www.pexels.com/@christopher-more-617959569",
+    "pexels_url": "https://www.pexels.com/photo/model-sailing-boats-racing-in-lincoln-waters-34199624/",
+    "query": "small sailboat racing"
+  }
+}
