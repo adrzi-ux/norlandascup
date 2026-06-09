@@ -106,8 +106,9 @@ async function main() {
 				console.warn(`  ✗ ${item.slug}: no result for "${item.query}"`);
 				continue;
 			}
-			// Use the 'large' (preferred) or 'medium' variant for web (smaller files)
-			const srcUrl = photo.src.large || photo.src.medium || photo.src.original;
+			// Use the 'large2x' (~1880x1252) variant for sharpness on hero/feature contexts (full-width display).
+			// Fallback to original then large.
+			const srcUrl = photo.src.large2x || photo.src.original || photo.src.large;
 			const ext = '.jpg';
 			const filename = item.slug + ext;
 			// Download once, write to both output dirs

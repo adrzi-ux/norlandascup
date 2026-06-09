@@ -29,7 +29,50 @@ $rub_label = isset( $rubrique_labels[ $article['rub'] ] ) ? $rubrique_labels[ $a
 $related_all = norlandascup_articles_by_rubrique( $article['rub'] );
 unset( $related_all[ $slug ] );
 $related = array_slice( $related_all, 0, 2, true );
+
+// Schema.org Article + FAQPage (parse les <h3> dans la section "Questions fréquentes" du body).
+// $article['date'] est au format JJ.MM.AAAA, plus fiable que la version longue française pour strtotime.
+$date_iso = '';
+if ( preg_match( '/^(\d{2})\.(\d{2})\.(\d{4})$/', $article['date'], $dm ) ) {
+	$date_iso = $dm[3] . '-' . $dm[2] . '-' . $dm[1] . 'T08:00:00+02:00';
+}
+$schema_article = array(
+	'@context'         => 'https://schema.org',
+	'@type'            => 'Article',
+	'headline'         => $article['title'],
+	'description'      => $article['excerpt'],
+	'image'            => esc_url( $img_base . $article['img'] ),
+	'datePublished'    => $date_iso ?: gmdate( 'c' ),
+	'author'           => array( '@type' => 'Organization', 'name' => "Norlanda's Cup, rédaction" ),
+	'publisher'        => array(
+		'@type' => 'Organization',
+		'name'  => "Norlanda's Cup",
+		'logo'  => array( '@type' => 'ImageObject', 'url' => esc_url( $img_base . 'home-hero.webp' ) ),
+	),
+	'mainEntityOfPage' => esc_url( home_url( '/magazine/' . $slug . '/' ) ),
+);
+
+// Extraction FAQ depuis le body (paires h3 + p qui suivent la dernière h2 "Questions fréquentes").
+$faq_entities = array();
+if ( preg_match( '#<h2>\s*Questions fréquentes\s*</h2>(.+)$#s', $article['body'], $faq_block ) ) {
+	if ( preg_match_all( '#<h3>(.+?)</h3>\s*<p>(.+?)</p>#s', $faq_block[1], $qa, PREG_SET_ORDER ) ) {
+		foreach ( $qa as $pair ) {
+			$faq_entities[] = array(
+				'@type'          => 'Question',
+				'name'           => wp_strip_all_tags( $pair[1] ),
+				'acceptedAnswer' => array(
+					'@type' => 'Answer',
+					'text'  => wp_strip_all_tags( $pair[2] ),
+				),
+			);
+		}
+	}
+}
 ?>
+<script type="application/ld+json"><?php echo wp_json_encode( $schema_article, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ); ?></script>
+<?php if ( ! empty( $faq_entities ) ) : ?>
+<script type="application/ld+json"><?php echo wp_json_encode( array( '@context' => 'https://schema.org', '@type' => 'FAQPage', 'mainEntity' => $faq_entities ), JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ); ?></script>
+<?php endif; ?>
 
 <header class="wrap page-head">
 	<span class="kicker">

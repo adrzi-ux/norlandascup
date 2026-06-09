@@ -8,12 +8,12 @@
     "query": "sailing yacht race rough sea"
   },
   "home-lead-trophee": {
-    "file": "home-lead-trophee.webp",
-    "alt": "Aerial photograph of multiple sailboats racing on a clear blue sea, creating dynamic sail trails.",
-    "photographer": "Muhammed Gündüz",
-    "photographer_url": "https://www.pexels.com/@muhammed-gunduz-383792461",
-    "pexels_url": "https://www.pexels.com/photo/aerial-view-of-sailboats-racing-in-open-water-29679811/",
-    "query": "sailing yacht race fleet"
+    "file": "home-lead-trophee.jpg",
+    "alt": "Close-up view of a sailboat mast and sails against a clear blue sky, highlighting nautical adventure.",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro",
+    "pexels_url": "https://www.pexels.com/photo/white-sailboat-on-sea-under-blue-sky-4928894/",
+    "query": "sailboat upwind spinnaker waves"
   },
   "home-card-winch": {
     "file": "home-card-winch.jpg",
@@ -206,21 +206,5 @@
     "photographer_url": "https://www.pexels.com/@matreding",
     "pexels_url": "https://www.pexels.com/photo/sailboats-moored-in-harbor-18111104/",
     "query": "sailboat docking marina"
-  },
-  "archive-hero": {
-    "file": "archive-hero.webp",
-    "alt": "Aerial view of vibrant sailing boats near scenic Marmaris, Turkey coastline.",
-    "photographer": "Tolga Aslantürk",
-    "photographer_url": "https://www.pexels.com/@tolgaaslanturk",
-    "pexels_url": "https://www.pexels.com/photo/an-aerial-photography-of-sailing-boats-on-the-sea-near-the-mountain-13075516/",
-    "query": "sailing yacht race aerial drone sea"
-  },
-  "eq-portrait-bateau": {
-    "file": "eq-portrait-bateau.webp",
-    "alt": "Model sailboats with GBR markings race on a lake in Lincoln, England.",
-    "photographer": "Christopher More",
-    "photographer_url": "https://www.pexels.com/@christopher-more-617959569",
-    "pexels_url": "https://www.pexels.com/photo/model-sailing-boats-racing-in-lincoln-waters-34199624/",
-    "query": "small sailboat racing"
   }
 }

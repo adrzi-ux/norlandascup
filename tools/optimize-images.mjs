@@ -21,7 +21,7 @@ async function convertDir(dir) {
 		const dst = path.join(dir, path.parse(f).name + '.webp');
 		const srcSize = fs.statSync(src).size;
 		await sharp(src)
-			.webp({ quality: 80, effort: 5 })
+			.webp({ quality: 88, effort: 6 })
 			.toFile(dst);
 		const dstSize = fs.statSync(dst).size;
 		totalSrc += srcSize;
