@@ -64,12 +64,12 @@
     "query": "deauville marina morning"
   },
   "mag-feature-trophee": {
-    "file": "mag-feature-trophee.jpg",
-    "alt": "Sailboats compete in a sunny open sea race, showcasing nautical adventure.",
-    "photographer": "Muhammed Gündüz",
-    "photographer_url": "https://www.pexels.com/@muhammed-gunduz-383792461",
-    "pexels_url": "https://www.pexels.com/photo/aerial-view-of-sailboats-racing-on-open-sea-29679807/",
-    "query": "sailing regatta start line"
+    "file": "mag-feature-trophee.webp",
+    "alt": "Sailboats racing in a summer regatta on a clear blue ocean surrounded by islands.",
+    "photographer": "Pixabay",
+    "photographer_url": "https://www.pexels.com/@pixabay",
+    "pexels_url": "https://www.pexels.com/photo/sailboat-lot-on-body-of-water-358326/",
+    "query": "aerial sailboat race open sea regatta"
   },
   "mag-card-tour-belle-ile": {
     "file": "mag-card-tour-belle-ile.jpg",
@@ -128,20 +128,20 @@
     "query": "tidal current rocks sea"
   },
   "mag-card-portrait-barreur": {
-    "file": "mag-card-portrait-barreur.jpg",
-    "alt": "Portrait of an elderly captain steering a boat, showcasing nautical life at sea.",
-    "photographer": "Samet  Korkmaz",
-    "photographer_url": "https://www.pexels.com/@samet-korkmaz-267675092",
-    "pexels_url": "https://www.pexels.com/photo/captain-on-boat-12811924/",
-    "query": "sailor portrait helmsman boat"
-  },
-  "mag-card-equipiere": {
-    "file": "mag-card-equipiere.jpg",
-    "alt": "An active young man engaged in sailing on a yacht, showcasing nautical skills and adventure.",
+    "file": "mag-card-portrait-barreur.webp",
+    "alt": "A man skillfully navigates a sailing yacht with full sails on an open water body during the day.",
     "photographer": "cottonbro studio",
     "photographer_url": "https://www.pexels.com/@cottonbro",
-    "pexels_url": "https://www.pexels.com/photo/man-in-blue-jacket-wearing-red-helmet-4928902/",
-    "query": "female sailor crew hiking"
+    "pexels_url": "https://www.pexels.com/photo/man-in-white-t-shirt-and-black-pants-on-white-sail-boat-4934617/",
+    "query": "sailing yacht race crew cockpit man"
+  },
+  "mag-card-equipiere": {
+    "file": "mag-card-equipiere.webp",
+    "alt": "A crew navigates a sailing yacht on a dark, cloudy day, showcasing teamwork and adventure.",
+    "photographer": "cottonbro studio",
+    "photographer_url": "https://www.pexels.com/@cottonbro",
+    "pexels_url": "https://www.pexels.com/photo/man-in-white-shirt-and-black-pants-riding-on-orange-and-white-sailboat-on-sea-during-4934578/",
+    "query": "woman sailing ocean yacht crew"
   },
   "mag-card-tableau-course": {
     "file": "mag-card-tableau-course.jpg",

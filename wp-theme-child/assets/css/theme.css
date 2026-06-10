@@ -53,9 +53,7 @@ a{color:inherit;text-decoration:none}
 .serif{font-family:var(--serif)}
 
 .ph{position:relative;background-color:#dcd2bd;background-image:repeating-linear-gradient(135deg, rgba(15,42,68,.10) 0 2px, transparent 2px 13px),linear-gradient(160deg, #d3c8b0, #c2b393);overflow:hidden;isolation:isolate}
-.ph::after{content:attr(data-ph);position:absolute;inset:0;display:flex;align-items:flex-end;padding:12px 14px;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--marine);text-transform:uppercase;background:linear-gradient(to top, rgba(242,235,220,.82), rgba(242,235,220,0) 46%)}
 .ph.dark{background-color:#102a44;background-image:repeating-linear-gradient(135deg, rgba(127,165,199,.16) 0 2px, transparent 2px 13px),linear-gradient(160deg,#143656,#0c2138)}
-.ph.dark::after{color:var(--glacier);background:linear-gradient(to top, rgba(10,30,51,.85), rgba(10,30,51,0) 46%)}
 .r45{aspect-ratio:4/5}
 .r32{aspect-ratio:3/2}
 .r169{aspect-ratio:16/9}
